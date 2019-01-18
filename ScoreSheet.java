@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /* Represents the scoresheet for a particular bowling game */
@@ -66,7 +67,7 @@ public class ScoreSheet {
     }
 
     //Iterator for scoresheet
-    class ScoreSheetIterator{
+    class ScoreSheetIterator implements Iterator<Frame> {
 
         private int frameIndex;
         private int index;
